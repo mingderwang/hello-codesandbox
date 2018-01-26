@@ -1,20 +1,26 @@
 {
-  "name": "hello-next",
-  "version": "1.0.0",
+  "name": "hello-codesandbox",
   "description": "tutorial for https://learnnextjs.com/",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node server.js",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js"
-  },
-  "author": "Ming-der Wang<mingderwang@gmailcom",
-  "license": "MIT",
+  "version": "1.0.0",
   "dependencies": {
     "express": "^4.16.2",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^4.2.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
+  },
+  "author": "Ming-der Wang<mingderwang@gmailcom",
+  "license": "MIT",
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "dev": "node server.js",
+    "nextbuild": "next build",
+    "start": "NODE_ENV=production node server.js"
   }
 }
